@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Weather app - Matteo Toffanello</title>
+
+</head>
+<body>
+    
+    <div id="ellipses">
+        <img src="./img/cute hand drawn/sun.png" alt="" id="ellipse_1">
+        <img src="./img/cute hand drawn/sun.png" alt="" id="ellipse_2">
+    </div>
+
+    <div id="blur"></div>
+
+    <div class="container">
+
+        <div id="searchbar">
+            <img src="./img/location.png" alt="" id="location_icon">
+            <input spellcheck="false" type="text" name="" id="" placeholder="Inserisci città">
+            <img src="./img/magnifying-glass.png" alt="" id="search_icon">
+        </div>
+
+        <div id="user_invite_to_action">
+            <h2>
+                Inserisci il nome della città in alto
+            </h2>
+            <h3>
+                o permetti all'app di accedere alla tua posizione
+            </h3>
+        </div>
+
+        <img src="./img/cute hand drawn/sun.png" alt="" id="weather">
+
+        <div id="current_day_info">
+            <span id="degree">20°C</span>
+            <div id="days_select">
+                <img id="back_arrow" src="./img/right-arrow.png" alt="">
+                <span id="day">Oggi</span>
+                <img id="next_arrow" src="./img/right-arrow.png" alt="">
+            </div>
+        </div>
+
+        <div id="more_info">
+
+            <!--<div class="days_after">
+                <img src="./img/cute hand drawn/sun.png" alt="">
+                <span class="time">10.00</span>
+                <span class="degrees_">20</span>
+            </div>
+            <div class="days_after"></div>
+            <div class="days_after"></div>
+            <div class="days_after"></div>
+            <div class="days_after"></div>
+            <div class="days_after"></div>
+            <div class="days_after"></div>-->
+
+            <!--<div id="imgs">
+                <img src="./img/precipations.png" alt="" id="precipation_img">
+                <img src="./img/wind.png" alt="" id="wind_speed_img">
+            </div>
+            <div id="data">
+                <span id="precipation_mm">0 mm</span>
+                <span id="wind_speed_kmh">5 km/h</span>
+            </div>-->
+        </div>
+
+    </div>
+
+    <div id="loading_circle" class="rotation"></div>
+
+    <details id="credits_section">
+        <summary>
+          CREDITS SECTION
+        </summary>
+        <p>
+            Image by <a href="https://www.freepik.com/free-vector/hand-drawn-kawaii-sky-characters-collection_4246822.htm#page=2&query=thunder%20cartoon%20personification&position=1&from_view=search&track=robertav1_2_sidr">Freepik</a>
+            <br><a href="https://www.flaticon.com/free-icons/location" title="location icons">Location icons created by Freepik - Flaticon</a>
+            <br><a href="https://www.flaticon.com/free-icons/search" title="search icons">Search icons created by Taufik - Flaticon</a>
+            <br><a href="https://www.flaticon.com/free-icons/next" title="next icons">Next icons created by See Icons - Flaticon</a>
+            <br>Image by <a href="https://www.freepik.com/free-vector/clouds-collection_15628072.htm#query=cloudy&position=38&from_view=search&track=robertav1_2_sidr">Freepik</a>
+            <br>Image by <a href="https://www.freepik.com/free-vector/hand-drawn-weather-effects_19344420.htm#query=Thunderstorm&position=13&from_view=search&track=robertav1_2_sidr">Freepik</a>
+            <br>Image by <a href="https://www.freepik.com/free-vector/hand-drawn-weather-effects_19344418.htm#from_view=detail_serie">Freepik</a>
+            <br>Image by <a href="https://www.freepik.com/free-vector/hand-drawn-weather-effects_19344419.htm#from_view=detail_serie">Freepik</a>
+            <br><a href="https://www.freepik.com/free-vector/umbrella-rain-concept-illustration_34994439.htm#page=3&query=rain&position=10&from_view=search&track=robertav1_2_sidr">Image by storyset</a> on Freepik
+        </p>
+      </details>
+
+    <!--<div id="credits_section">
+        Image by <a href="https://www.freepik.com/free-vector/hand-drawn-kawaii-sky-characters-collection_4246822.htm#page=2&query=thunder%20cartoon%20personification&position=1&from_view=search&track=robertav1_2_sidr">Freepik</a>
+        <br><a href="https://www.flaticon.com/free-icons/location" title="location icons">Location icons created by Freepik - Flaticon</a>
+        <br><a href="https://www.flaticon.com/free-icons/search" title="search icons">Search icons created by Taufik - Flaticon</a>
+        <br><a href="https://www.flaticon.com/free-icons/next" title="next icons">Next icons created by See Icons - Flaticon</a>
+        <br>Image by <a href="https://www.freepik.com/free-vector/clouds-collection_15628072.htm#query=cloudy&position=38&from_view=search&track=robertav1_2_sidr">Freepik</a>
+        <br>Image by <a href="https://www.freepik.com/free-vector/hand-drawn-weather-effects_19344420.htm#query=Thunderstorm&position=13&from_view=search&track=robertav1_2_sidr">Freepik</a>
+        <br>Image by <a href="https://www.freepik.com/free-vector/hand-drawn-weather-effects_19344418.htm#from_view=detail_serie">Freepik</a>
+        <br>Image by <a href="https://www.freepik.com/free-vector/hand-drawn-weather-effects_19344419.htm#from_view=detail_serie">Freepik</a>
+        <br><a href="https://www.freepik.com/free-vector/umbrella-rain-concept-illustration_34994439.htm#page=3&query=rain&position=10&from_view=search&track=robertav1_2_sidr">Image by storyset</a> on Freepik
+    </div>-->
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>
