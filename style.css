@@ -62,7 +62,7 @@ body{
     display: grid;
     grid-template-rows: .9fr 3fr 1.5fr 2.5fr;
     justify-content: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
 
 }
 
