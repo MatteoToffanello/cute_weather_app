@@ -97,6 +97,7 @@ body *{
     line-height: 3rem;
     transform: translateX(-50%);
     border-radius: 10px;
+    z-index:999;
 }
 #searchbar input::placeholder{
     color: black;
