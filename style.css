@@ -9,6 +9,11 @@ body{
     /*width: 100vw;
     height: 100vh;*/
 }
+
+body *{
+    user-select: none;
+}
+
 #bg{
     position: absolute;
     top: 0px;
