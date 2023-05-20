@@ -93,7 +93,7 @@ function loadImage(weather_code){
         case 0:
             src_weather_img = "./img/cute hand drawn/sun.png";
 
-            document.querySelector("#bg").classList.remove(...document.body.classList);
+            document.querySelector("#bg").classList.remove(...document.querySelector("#bg").classList);
             document.querySelector("#bg").classList.add("sole_bg");
 
             //document.querySelector("#ellipse_1").setAttribute("src", src_weather_img);
@@ -105,7 +105,7 @@ function loadImage(weather_code){
             // cloudy, partly clear
             src_weather_img = "./img/cute hand drawn/partly_clear.png";
 
-            document.querySelector("#bg").classList.remove(...document.body.classList);
+            document.querySelector("#bg").classList.remove(...document.querySelector("#bg").classList);
             document.querySelector("#bg").classList.add("parz_nuvoloso_bg");
 
             //document.querySelector("#ellipse_1").setAttribute("src", "./img/cute hand drawn/sun.png");
@@ -119,7 +119,7 @@ function loadImage(weather_code){
         case 51: case 53: case 55: case 56: case 57: case 61: case 63: case 65: case 66: case 67:
             src_weather_img = "./img/cute hand drawn/rain.png";
 
-            document.querySelector("#bg").classList.remove(...document.body.classList);
+            document.querySelector("#bg").classList.remove(...document.querySelector("#bg").classList);
             document.querySelector("#bg").classList.add("pioggia_bg");
 
             //document.querySelector("#ellipse_1").setAttribute("src", src_weather_img);
@@ -130,7 +130,7 @@ function loadImage(weather_code){
         case 71: case 73: case 75: case 85: case 86:
             src_weather_img = "./img/cute hand drawn/snow.png";
 
-            document.querySelector("#bg").classList.remove(...document.body.classList);
+            document.querySelector("#bg").classList.remove(...document.querySelector("#bg").classList);
             document.querySelector("#bg").classList.add("neve_bg");
 
             //document.querySelector("#ellipse_1").setAttribute("src", src_weather_img);
@@ -144,7 +144,7 @@ function loadImage(weather_code){
         case 80: case 81: case 82:
             src_weather_img = "./img/cute hand drawn/rain.png";
 
-            document.querySelector("#bg").classList.remove(...document.body.classList);
+            document.querySelector("#bg").classList.remove(...document.querySelector("#bg").classList);
             document.querySelector("#bg").classList.add("pioggia_bg");
 
             //document.querySelector("#ellipse_1").setAttribute("src", src_weather_img);
@@ -155,7 +155,7 @@ function loadImage(weather_code){
         case 95: case 96: case 99:
             src_weather_img = "./img/cute hand drawn/thunder.png";
 
-            document.querySelector("#bg").classList.remove(...document.body.classList);
+            document.querySelector("#bg").classList.remove(...document.querySelector("#bg").classList);
             document.querySelector("#bg").classList.add("temporale_bg");
 
             //document.querySelector("#ellipse_1").setAttribute("src", src_weather_img);
